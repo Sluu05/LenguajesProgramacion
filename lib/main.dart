@@ -37,7 +37,7 @@ class GoogleAccount extends StatelessWidget {
               description: 'La verificación de seguridad revisó tu cuenta y no encontró acciones recomendadas.',
               icon: Icons.verified_user,
               actionText: 'Ver detalles',
-              actionColor: Colors.blue,
+              actionColor: Colors.blue[800],
             ),
             Divider(color: Colors.grey[200]),
             _buildSection1(
@@ -45,7 +45,7 @@ class GoogleAccount extends StatelessWidget {
               description: 'Elige la configuración de privacidad indicada para ti con esta guía paso a paso.',
               icon: Icons.security,
               actionText: 'Realizar la Verificación de privacidad',
-              actionColor: Colors.blue,
+              actionColor: Colors.blue[800],
             ),
             Divider(color: Colors.grey[200]),
             _buildSearchSection(
@@ -141,7 +141,7 @@ class GoogleAccount extends StatelessWidget {
             Icon(
               icon,
               size: 80,
-              color: Colors.blue,
+              color: Colors.blue[800],
             ),
           ],
         ),
@@ -225,7 +225,7 @@ class GoogleAccount extends StatelessWidget {
         children: [
           Expanded(
             child: RichText(
-              text: const TextSpan(
+              text:  TextSpan(
                 style: TextStyle(
                   fontSize: 13,
                   color: Color.fromARGB(255, 69, 69, 69),
@@ -242,13 +242,13 @@ class GoogleAccount extends StatelessWidget {
                           'Más información ',
                           style: TextStyle(
                             fontSize: 13,
-                            color: Colors.blue,
+                            color: Colors.blue[800],
                           ),
                         ),
                         SizedBox(width: 6),
                         Icon(
                           Icons.help_outline,
-                          color: Colors.blue,
+                          color: Colors.blue[800],
                           size: 14,
                         ),
                       ],
@@ -261,7 +261,7 @@ class GoogleAccount extends StatelessWidget {
           SizedBox(width: 8),
           Icon(
             icon,
-            color: Colors.blue,
+            color: Colors.blue[800],
             size: 50,
           ),
         ],
